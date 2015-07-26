@@ -87,7 +87,12 @@ cacheSolve <- function(x, ...)
 ##     [,1] [,2]
 ##[1,] -2.5    2
 ##[2,]  1.5   -1
+
 ##> source_matrix2 <- matrix(3:6, nrow = 2, ncol = 2)
+##> source_matrix2
+##     [,1] [,2]
+##[1,]    3    5
+##[2,]    4    6
 ##> cached_matrix2 = makeCacheMatrix(source_matrix2)
 ##> cached_matrix2$get()
 ##** Getting the source matrix **
@@ -102,8 +107,6 @@ cacheSolve <- function(x, ...)
 ##     [,1] [,2]
 ##[1,]   -3  2.5
 ##[2,]    2 -1.5
-
-
 ##> cacheSolve(cached_matrix2)
 ##** Getting the inverse **
 ##** Stored inverse exists, getting cached data instead **
